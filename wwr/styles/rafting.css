@@ -1,0 +1,158 @@
+:root {
+    --primary-color: #023e8a;
+    --secondary-color: #90e0ef;
+    --accent1-color: #03045e;
+    --accent2-color: #ffb703;
+
+    --heading-font: Georgia, "Times New Roman", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background-color: #f8f9fa;
+}
+
+/* Header, Main and Footer */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 15px;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent2-color);
+}
+
+/* Main Headings */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* General Spacing */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+}
+
+.hero > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Hero Heading */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.9;
+    background-color: var(--accent1-color);
+    color: white;
+}
+
+/* Hero Article */
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--accent1-color);
+    padding: 15px;
+}
+
+/* Article Image */
+.hero article img {
+    float: right;
+    width: 125px;
+    height: auto;
+    margin: 10px;
+    border: 3px solid var(--primary-color);
+}
+
+/* Sections */
+section {
+    margin: 25px 0;
+    padding: 15px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Paragraphs */
+p {
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+/* Footer Social Media */
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}

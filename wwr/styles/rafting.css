@@ -1,3 +1,4 @@
+/* CSS Variables */
 :root {
     --primary-color: #023e8a;
     --secondary-color: #90e0ef;
@@ -19,7 +20,7 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-    background-color: #f8f9fa;
+    background-color: var(--secondary-color);
 }
 
 /* Header, Main and Footer */
@@ -61,7 +62,7 @@ nav a:hover {
     color: var(--accent2-color);
 }
 
-/* Main Headings */
+/* Headings */
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -146,7 +147,7 @@ footer {
     padding: 15px;
 }
 
-/* Footer Social Media */
+/* Social Media Icons */
 .socialmedia a {
     text-decoration: none;
 }

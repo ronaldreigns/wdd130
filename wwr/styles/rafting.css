@@ -151,7 +151,7 @@ main {
     padding: 25px;
     display: grid;
 
-    /* This creates exactly five horizontal columns */
+    /* five horizontal columns */
     grid-template-columns: repeat(5, minmax(0, 1fr));
 
     gap: 10px;

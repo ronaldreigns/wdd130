@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Waitamu Ronald">
     <meta name="description" content="Contact River Rush Adventures for rafting reservations, general inquiries, and information about our services.">
-
+    <meta name="author" content="Waitamu Ronald">
     <title>Contact Us | River Rush Adventures</title>
-
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
 
-    <!-- Header -->
     <header>
-
-        <img src="images/rafting-logo.png" alt="River Rush Adventures Logo">
+        <img src="images/rafting-logo.png" alt="River Rush Adventures logo">
 
         <nav>
             <ul>
@@ -27,117 +22,99 @@
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
-
     </header>
 
-    <!-- Main Content -->
     <main class="contact-main">
 
-        <!-- Company Contact Information -->
         <section class="company-info">
+            <h1>Contact River Rush Adventures</h1>
 
-            <h1>River Rush Adventures</h1>
-
-            <p><strong>123 Main River Street</strong></p>
-            <p><strong>Kolob, California</strong></p>
-            <p><strong>+1 999 999 9999</strong></p>
-            <p><strong>info@riverrushadventures.com</strong></p>
-
+            <p><strong>Address:</strong> 123 Main River Street, Kolob, California</p>
+            <p><strong>Phone:</strong> +1 999 999 9999</p>
+            <p><strong>Email:</strong> info@riverrushadventures.com</p>
         </section>
 
-        <!-- Map and Contact Form -->
         <section class="contact-content">
 
-            <!-- Google Map -->
             <div class="map-container">
+                <h2>Our Location</h2>
 
                 <iframe
                     src="https://www.google.com/maps?q=Kolob%2C%20California&output=embed"
                     title="Map showing River Rush Adventures location"
                     width="100%"
-                    height="350"
+                    height="300"
                     loading="lazy"
                     allowfullscreen>
                 </iframe>
-
             </div>
 
-            <!-- Contact Form -->
-            <form class="contact-form" action="#" method="post">
+            <div class="form-container">
+                <h2>Send Us a Message</h2>
 
-                <div class="form-group">
-                    <label for="fullname">Name</label>
-                    <input type="text" id="fullname" name="fullname"
-                        placeholder="Enter your name" required>
-                </div>
+                <form action="#" method="post">
 
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email"
-                        placeholder="Enter your email address" required>
-                </div>
+                    <div class="form-group">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </div>
 
-                <fieldset>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
 
-                    <legend>Message Purpose</legend>
+                    <fieldset>
+                        <legend>What is the purpose of your message?</legend>
 
-                    <label>
-                        <input type="radio" name="purpose"
-                            value="general-inquiry" required>
-                        General Inquiry
-                    </label>
+                        <label for="general-inquiry">
+                            <input type="radio" id="general-inquiry"
+                                name="purpose" value="general-inquiry" required>
+                            General Inquiry
+                        </label>
 
-                    <label>
-                        <input type="radio" name="purpose"
-                            value="reservation-question">
-                        Reservation Question
-                    </label>
+                        <label for="reservation-question">
+                            <input type="radio" id="reservation-question"
+                                name="purpose" value="reservation-question">
+                            Reservation Question
+                        </label>
 
-                    <label>
-                        <input type="radio" name="purpose"
-                            value="website-suggestion">
-                        Website Suggestion
-                    </label>
+                        <label for="website-suggestion">
+                            <input type="radio" id="website-suggestion"
+                                name="purpose" value="website-suggestion">
+                            Website Suggestion
+                        </label>
+                    </fieldset>
 
-                </fieldset>
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message"
+                            rows="5" required></textarea>
+                    </div>
 
-                <div class="form-group message-group">
+                    <div class="newsletter">
+                        <input type="checkbox" id="subscribe" name="subscribe"
+                            value="yes">
+                        <label for="subscribe">
+                            Please subscribe me to the monthly newsletter
+                        </label>
+                    </div>
 
-                    <label for="message">Message</label>
+                    <button type="submit">Send Message</button>
 
-                    <textarea id="message" name="message"
-                        placeholder="Type your message here..."
-                        rows="5" required></textarea>
-
-                </div>
-
-                <div class="newsletter">
-
-                    <input type="checkbox" id="subscribe"
-                        name="subscribe">
-
-                    <label for="subscribe">
-                        Please subscribe me to the monthly newsletter
-                    </label>
-
-                </div>
-
-                <button type="submit">Send Message</button>
-
-            </form>
+                </form>
+            </div>
 
         </section>
 
-        <!-- Employee Profiles -->
         <section class="employees">
-
-            <h2>We Are Here to Serve You</h2>
+            <h2>Meet Our Team</h2>
 
             <div class="employee-container">
 
                 <figure>
                     <img src="images/employee1.jpg"
-                        alt="River Rush Adventures customer service representative">
+                        alt="Customer service manager">
                     <figcaption>
                         Ronald Waitamu<br>
                         Customer Service Manager
@@ -146,7 +123,7 @@
 
                 <figure>
                     <img src="images/employee2.jpg"
-                        alt="River Rush Adventures rafting guide">
+                        alt="Rafting guide">
                     <figcaption>
                         James Miller<br>
                         Head Rafting Guide
@@ -155,7 +132,7 @@
 
                 <figure>
                     <img src="images/employee3.jpg"
-                        alt="River Rush Adventures reservations officer">
+                        alt="Reservations officer">
                     <figcaption>
                         Sarah Johnson<br>
                         Reservations Officer
@@ -163,18 +140,14 @@
                 </figure>
 
             </div>
-
         </section>
 
     </main>
 
-    <!-- Footer -->
     <footer>
-
         <p>&copy; 2026 River Rush Adventures | Waitamu Ronald</p>
 
         <nav class="socialmedia">
-
             <a href="https://facebook.com">
                 <img src="images/facebook.svg" alt="Facebook">
             </a>
@@ -186,9 +159,7 @@
             <a href="https://instagram.com">
                 <img src="images/instagram.svg" alt="Instagram">
             </a>
-
         </nav>
-
     </footer>
 
 </body>
